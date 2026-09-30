@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="4" fill="#0F5C4D"/>
+  <rect x="6" y="6" width="20" height="20" rx="2" fill="#F6F3EC" fill-opacity="0.12" stroke="#A7CCC4" stroke-width="1"/>
+  <!-- Central cross in warm off-white and signal orange dot -->
+  <path d="M14 9h4v14h-4z" fill="#F6F3EC"/>
+  <path d="M9 14h14v4H9z" fill="#F6F3EC"/>
+  <!-- Node dots indicating federated grid -->
+  <circle cx="9" cy="9" r="1.5" fill="#D9822B"/>
+  <circle cx="23" cy="9" r="1.5" fill="#A7CCC4"/>
+  <circle cx="9" cy="23" r="1.5" fill="#A7CCC4"/>
+  <circle cx="23" cy="23" r="1.5" fill="#D9822B"/>
+</svg>

@@ -1,0 +1,73 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    --bg-base: #F6F3EC;
+    --ink-base: #14211C;
+    --teal-base: #0F5C4D;
+    --warning-base: #D9822B;
+    --critical-base: #B3261E;
+    --line-base: #E2DDD2;
+  }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--ink-base);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Operations grid styling */
+  table {
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border-color: #E2DDD2;
+  }
+}
+
+/* Reduced motion preference respect */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Operational scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F3EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4CEBF;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B0A99A;
+}
+
+/* Leaflet map pane styling to integrate cleanly with warm theme */
+.leaflet-container {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  background-color: #EFECE4 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 4px !important;
+  box-shadow: 0 4px 12px rgba(20, 33, 28, 0.15) !important;
+  border: 1px solid #D4CEBF !important;
+  background: #FFFFFF !important;
+  color: #14211C !important;
+}
+
+.leaflet-popup-tip {
+  background: #FFFFFF !important;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Aushadhi Grid",
+  "short_name": "Aushadhi",
+  "description": "Federated Health Resource and Supply Chain Intelligence Platform for India's Primary Health Centres",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F6F3EC",
+  "theme_color": "#0F5C4D",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
